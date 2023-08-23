@@ -1,11 +1,13 @@
 import './App.css';
-import { ReactDOM } from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import ErrorPage from './pages/ErrorPage';
+import HomeView from './pages/HomeView';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <div>main</div>,
+		element: <HomeView />,
+		errorElement: <ErrorPage />,
 	},
 ]);
 function App() {

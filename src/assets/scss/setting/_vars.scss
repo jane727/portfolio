@@ -1,0 +1,33 @@
+:root {
+	--color-white: white;
+	--color-beige: #f5eada;
+	--color-blue: #4c2ede;
+	--color-yellow: #f7cc36;
+	--color-orange: #f9794c;
+	--color-purple: #dd99f9;
+	--color-bg: #0c142f;
+	--color-gradient: linear-gradient(
+		239deg,
+		rgba(12, 20, 47, 1) 0%,
+		rgba(76, 46, 222, 1) 50%,
+		rgba(12, 20, 47, 1) 100%
+	);
+
+	--font-eng: 'Montserrat';
+	--font-kr: 'Pretendard';
+
+	font-size: 62.5%;
+	line-height: 1.5;
+	font-weight: 400;
+	letter-spacing: -0.05em;
+
+	@media (max-width: 860px) {
+		line-height: 1.4;
+	}
+}
+
+body {
+	font: size 1.6em;
+	color: var(--color-white);
+	background-color: var(--color-bg);
+}
