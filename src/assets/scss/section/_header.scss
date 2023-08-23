@@ -1,0 +1,123 @@
+#header {
+	@include position-fixed;
+	z-index: 9999;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1400px;
+	margin: 2.5rem auto;
+	padding: 2rem;
+	border-top: 1px solid var(--color-white);
+	border-bottom: 1px solid var(--color-white);
+	@media (max-width: 800px) {
+		margin: 0;
+		border-top: 0;
+		padding: 1rem;
+	}
+}
+.header__logo {
+	padding-right: 10rem;
+	@media (max-width: 1023px) {
+		padding-right: 0;
+	}
+	&__svg {
+		width: 180px;
+		@media (max-width: 800px) {
+			width: 120px;
+		}
+	}
+}
+
+.header__nav {
+	flex: 1 1 auto;
+	@media (max-width: 1023px) {
+		display: none;
+		&.show {
+			flex: 1 1 auto;
+			display: block;
+			ul {
+				display: block;
+				position: absolute;
+				right: 0;
+				top: 130px;
+				min-width: 150px;
+				padding: 1rem 0;
+				font-size: 1.5rem;
+				li {
+					display: block;
+					text-align: right;
+					padding: 0rem 2rem;
+					a {
+						display: inline-block;
+						padding: 10px;
+					}
+				}
+			}
+		}
+		&.show + .header__nav__mobile span::before {
+			width: 20px;
+		}
+		&.show + .header__nav__mobile span::after {
+			width: 20px;
+		}
+	}
+	ul {
+		display: flex;
+		justify-content: flex-end;
+		font-size: 2rem;
+		li {
+			padding: 0.5rem 3rem;
+			a {
+				padding: 2rem;
+				position: relative;
+				text-transform: uppercase;
+				transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+				transform: translate(0, 0);
+				&:hover {
+					transform: translate(0, -150%);
+				}
+			}
+		}
+	}
+}
+
+.header__nav__mobile {
+	display: none;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	@media (max-width: 1023px) {
+		display: block;
+	}
+	span {
+		display: block;
+		width: 40px;
+		height: 2px;
+		background-color: var(--color-white);
+		margin-top: 18px;
+		position: relative;
+		&::before {
+			content: '';
+			width: 40px;
+			height: 2px;
+			background-color: var(--color-white);
+			position: absolute;
+			right: 0;
+			top: 6px;
+			transition: width 0.3s;
+		}
+		&::after {
+			content: '';
+			width: 40px;
+			height: 2px;
+			background-color: var(--color-white);
+			position: absolute;
+			left: 0;
+			bottom: 6px;
+			transition: width 0.3s;
+		}
+	}
+}

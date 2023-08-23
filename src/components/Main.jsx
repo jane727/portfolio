@@ -1,8 +1,9 @@
 import React from 'react';
 
-const Main = ({ children }) => (
-	<main id='main' role='main'>
-		{children}
-	</main>
-);
-export default Main;
+export default function Main({ children }) {
+	return (
+		<main id='main' role='main'>
+			{children}
+		</main>
+	);
+}
