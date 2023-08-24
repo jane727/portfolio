@@ -7,13 +7,13 @@
 	align-items: center;
 	max-width: 1600px;
 	margin: 2.5rem auto;
-	padding: 2rem;
+	padding: 0 2rem;
 	border-top: 1px solid var(--color-white);
 	border-bottom: 1px solid var(--color-white);
 	@media (max-width: 960px) {
 		margin: 0;
 		border-top: 0;
-		padding: 1rem;
+		padding: 1rem 3rem;
 	}
 }
 .header__logo {
@@ -23,7 +23,7 @@
 	}
 	&__svg {
 		width: 140px;
-		@media (max-width: 1400px) {
+		@media (max-width: 1500px) {
 			width: 100px;
 		}
 		@media (max-width: 960px) {
@@ -52,7 +52,7 @@
 			}
 		}
 	}
-	@media (max-width: 1400px) {
+	@media (max-width: 1500px) {
 		ul {
 			font-size: 1.7rem;
 			li {
@@ -65,14 +65,16 @@
 		&.show {
 			flex: 1 1 auto;
 			display: block;
+			background: var(--color-white);
 			ul {
 				display: block;
 				position: absolute;
 				right: 0;
-				top: 130px;
+				top: 70px;
 				min-width: 150px;
-				padding: 1rem 0;
-				font-size: 1.5rem;
+				padding: 1rem 2rem;
+				font-size: 3rem;
+				background-color: var(--color-bg);
 				li {
 					display: block;
 					text-align: right;

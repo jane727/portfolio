@@ -7,9 +7,9 @@
 	--color-purple: #dd99f9;
 	--color-bg: #0c142f;
 	--color-gradient: linear-gradient(
-		239deg,
+		180deg,
 		rgba(12, 20, 47, 1) 0%,
-		rgba(76, 46, 222, 1) 50%,
+		rgba(61, 35, 185, 1) 50%,
 		rgba(12, 20, 47, 1) 100%
 	);
 
@@ -29,6 +29,8 @@
 			"%3Csvg xmlns='http://www.w3.org/2000/svg' width='656' height='924' fill='none'%3E%3Cpath fill='%234C2EDE' fill-rule='evenodd' d='M0 30C0 13.431 13.431 0 30 0h407.099c3.922 0 7.667.752 11.1 2.12a49.917 49.917 0 0 1 25.182 9.147l161.555 115.24a50 50 0 0 1 20.965 40.705v35.49c.065.812.099 1.632.099 2.46v687.875c0 16.568-13.431 30-30 30H30c-16.569 0-30-13.432-30-30V30Z' clip-rule='evenodd'/%3E%3C/svg%3E",
 		orange:
 			"%3Csvg xmlns='http://www.w3.org/2000/svg' width='764' height='793' fill='none'%3E%3Cpath fill='%23F9794C' fill-rule='evenodd' d='M244.823.445A30.2 30.2 0 0 1 250 0h484c16.569 0 30 13.432 30 30v733c0 16.569-13.431 30-30 30H30c-16.569 0-30-13.431-30-30V234c0-.894.04-1.779.116-2.654v-40.845a50 50 0 0 1 20.964-40.705L217.464 9.712A49.93 49.93 0 0 1 244.823.445Z' clip-rule='evenodd'/%3E%3C/svg%3E",
+		white:
+			"%3Csvg xmlns='http://www.w3.org/2000/svg' width='1303' height='806' fill='none'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M570.374 84H1273c16.57 0 30 13.431 30 30v662c0 16.569-13.43 30-30 30H30c-16.569 0-30-13.431-30-30V31C0 14.431 13.431 1 30 1h419.242a29.975 29.975 0 0 1 21.528 6.028l96.007 73.716A30.042 30.042 0 0 1 570.374 84Z' clip-rule='evenodd'/%3E%3C/svg%3E",
 	);
 	$icon: map-get(
 		$map: $iconList,

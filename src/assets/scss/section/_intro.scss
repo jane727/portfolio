@@ -1,6 +1,3 @@
-#intro {
-	height: 100vh;
-}
 .intro__inner {
 	width: 100%;
 	max-width: 1600px;
@@ -9,7 +6,8 @@
 	align-items: stretch;
 	justify-content: space-between;
 	flex-direction: row;
-	@media screen and (max-width: 1400px) {
+	padding: 2rem;
+	@media screen and (max-width: 1500px) {
 		padding: 4rem;
 	}
 	@media screen and (max-width: 769px) {
@@ -24,7 +22,7 @@
 	height: auto;
 	padding: 14rem 6rem 5rem;
 	text-transform: uppercase;
-	@media screen and (max-width: 1400px) {
+	@media screen and (max-width: 1500px) {
 		padding: 14rem 5rem 4rem;
 	}
 	@media screen and (max-width: 769px) {
