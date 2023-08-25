@@ -1,0 +1,113 @@
+.projects__inner {
+	max-width: 1500px;
+	margin: auto;
+}
+.projects__title {
+	font-size: 9rem;
+	font-weight: bold;
+	line-height: 1;
+	text-transform: uppercase;
+	@media screen and (max-width: 1500px) {
+		padding: 3rem 3rem 0;
+	}
+	@media screen and (max-width: 800px) {
+		padding: 3rem 5rem 0;
+		text-align: center;
+	}
+}
+.projects__wrap {
+	width: 100%;
+	display: flex;
+	align-items: stretch;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+	margin: 3rem 0;
+	@media screen and (max-width: 1500px) {
+		padding: 3rem;
+	}
+	@media screen and (max-width: 800px) {
+		padding: 3rem 5rem;
+	}
+}
+.projects__item {
+	min-width: 30%;
+	background: icon(blue2);
+	background-size: 100% 100%;
+	padding: 3rem;
+	border-radius: 3rem;
+	margin-right: 3rem;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&__title {
+		display: block;
+		width: 100%;
+		font-size: 3.5rem;
+		font-weight: bold;
+		word-break: keep-all;
+		padding: 0 3rem 2rem 0;
+		border-bottom: 1px solid var(--color-white);
+		margin-bottom: 3rem;
+	}
+	&__img {
+		display: block;
+	}
+	&__desc {
+		font-size: 1.7rem;
+		word-break: keep-all;
+		text-align: center;
+		padding: 2rem 2rem 1rem;
+	}
+	&__tag {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		span {
+			font-size: 1.2rem;
+			font-weight: bold;
+			display: inline-block;
+			padding: 0.3rem 1rem;
+			border-radius: 50px;
+			background: var(--color-white);
+			color: var(--color-bg);
+			margin: 0 0.5rem;
+		}
+	}
+	&__site {
+		display: inline-block;
+		background: var(--color-yellow);
+		font-weight: bold;
+		color: var(--color-bg);
+		padding: 0.8rem 5rem;
+		border-radius: 50px;
+		font-size: 2rem;
+		margin-top: 2rem;
+	}
+	@media screen and (max-width: 1023px) {
+		min-width: 50%;
+		text-align: left;
+		padding: 4rem 5rem 4rem;
+		&__title {
+			padding-top: 3rem;
+			font-size: 7rem;
+		}
+		&__desc {
+			font-size: 3.5rem;
+			padding: 2rem;
+		}
+		&__site {
+			width: 100%;
+			display: block;
+			text-align: center;
+			font-size: 3rem;
+			padding: 2rem;
+		}
+	}
+	@media screen and (max-width: 800px) {
+		padding: 6rem;
+		min-width: 100%;
+		background: var(--color-blue);
+		border-radius: 5rem;
+	}
+}
