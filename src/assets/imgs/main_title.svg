@@ -2,6 +2,13 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 865.78 209.98" fill="current">
   <defs>
     <style>
+    @font-face {
+        font-family: 'LOTTERIA CHAB';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2')
+          format('woff2');
+        font-weight: normal;
+        font-style: normal;
+      }
       .cls-1 {
         font-family: LOTTERIACHAB-KSCpc-EUC-H, 'LOTTERIA CHAB';
         font-size: 54px;
