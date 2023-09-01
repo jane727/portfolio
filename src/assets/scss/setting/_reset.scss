@@ -76,18 +76,20 @@ html {
 	font-size: 62.5%;
 	line-height: 1.5;
 	font-weight: 400;
-	letter-spacing: -0.05em;
-	@media screen and (max-width: 1800px) {
-		font-size: calc(0.5vw + 0.1rem);
+	letter-spacing: -0.1em;
+	color: var(--color-black);
+	// @media screen and (max-width: 1800px) {
+	// 	font-size: calc(0.5vw + 0.1rem);
+	// }
+	@media (max-width: 860px) {
+		line-height: 1.4;
 	}
-	@media screen and (max-width: 479px) {
-		font-size: calc(1vw);
-	}
+	// @media screen and (max-width: 479px) {
+	// 	font-size: calc(1vw);
+	// }
 }
 
 body {
-	color: var(--color-white);
-	background-color: var(--color-bg);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-smoothing: antialiased;

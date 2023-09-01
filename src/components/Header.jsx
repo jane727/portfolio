@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ReactComponent as Logo } from '../assets/imgs/header_logo.svg';
+import { ReactComponent as Logo } from '../assets/imgs/logo_new.svg';
 
 const headerNav = [
 	{
@@ -9,6 +9,10 @@ const headerNav = [
 	{
 		title: 'about',
 		url: '#about',
+	},
+	{
+		title: 'skill',
+		url: '#skill',
 	},
 	{
 		title: 'projects',
@@ -27,16 +31,10 @@ const Header = () => {
 	return (
 		<header id='header' role='banner'>
 			<div className='header__inner'>
-				<div className='header__logo'>
-					<a href='/'>
-						<Logo className='header__logo__svg' />
-					</a>
-				</div>
-				<nav
-					className={`header__nav ${show ? 'show' : ''}`}
-					role='navigation'
-					aria-label='메인 메뉴'
-				>
+				<a href='/' className='header__logo'>
+					<Logo className='logo-svg' />
+				</a>
+				<nav className={`nav ${show ? 'show' : ''}`} role='navigation' aria-label='메인 메뉴'>
 					<ul>
 						{headerNav.map((nav, key) => (
 							<li key={key}>
@@ -46,7 +44,7 @@ const Header = () => {
 					</ul>
 				</nav>
 				<div
-					className='header__nav__mobile'
+					className='nav__toggle-btn'
 					id='headerToggle'
 					aria-controls='primary-menu'
 					aria-expanded={show ? 'true' : 'false'}

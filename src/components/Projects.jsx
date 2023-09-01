@@ -16,30 +16,21 @@ import projects12 from '../assets/imgs/projects/task.jpg';
 const Projects = () => (
 	<section id='projects'>
 		<div className='projects__inner'>
-			<h1 className='projects__title'>
-				My
-				<br />
-				Projects
-			</h1>
+			<h1 className='section-title shape'>My Projects</h1>
 			<div className='projects__wrap'>
 				{projectsText.map((project, key) => (
-					<article className={`projects__item p${key + 1}`} key={key}>
-						<h3 className='projects__item__title'>{project.title}</h3>
-						<a href={project.view} target='_blank' className='projects__item__img' rel='noreferrer'>
+					<article className={`projects-item p${key + 1}`} key={key}>
+						<h3 className='projects-item__title'>{project.title}</h3>
+						<a href={project.view} target='_blank' className='projects-item__img' rel='noreferrer'>
 							<img src={project.img} alt={project.title} />
 						</a>
-						<p className='projects__item__desc'>{project.desc}</p>
-						<p className='projects__item__tag'>
+						<p className='projects-item__desc'>{project.desc}</p>
+						<p className='projects-item__tag'>
 							{projectsText[key].tag.map((tag, i) => (
 								<span>{tag}</span>
 							))}
 						</p>
-						<a
-							href={project.view}
-							target='_blank'
-							className='projects__item__site'
-							rel='noreferrer'
-						>
+						<a href={project.view} target='_blank' className='projects-item__site' rel='noreferrer'>
 							View <BsArrowUpRight />
 						</a>
 					</article>

@@ -1,0 +1,12 @@
+#footer {
+	text-align: center;
+	font-weight: 500;
+	font-size: 1.5rem;
+	padding: 2rem;
+	color: var(--color-black);
+	background: var(--color-pink);
+	@media screen and (max-width: 1400px) {
+		font-size: 1.3rem;
+		padding: 1.5rem;
+	}
+}

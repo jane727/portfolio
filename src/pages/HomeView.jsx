@@ -6,6 +6,7 @@ import Projects from '../components/Projects';
 import Footer from '../components/Footer';
 import Contact from '../components/Contact';
 import Intro from '../components/Intro';
+import { Skill } from '../components/Skill';
 
 export default function HomeView() {
 	return (
@@ -14,6 +15,7 @@ export default function HomeView() {
 			<Main>
 				<Intro />
 				<About />
+				<Skill />
 				<Projects />
 				<Contact />
 			</Main>
