@@ -52,62 +52,18 @@
 	}
 	.scr {
 		font-size: 3rem;
+		animation: scrAni 1s linear infinite alternate running;
 		@media screen and (max-width: 1024px) {
 			font-size: 2rem;
 		}
 	}
 }
 
-// .intro__ghost {
-// 	padding: 2rem;
-// 	@media screen and (max-width: 1400px) {
-// 		padding: 5rem;
-// 	}
-// 	@media screen and (max-width: 769px) {
-// 		width: 100%;
-// 		height: 40vw;
-// 		margin-top: 4rem;
-// 	}
-// }
-
-// @keyframes ghostMove {
-// 	from {
-// 		transform: translateX(0);
-// 	}
-// 	to {
-// 		transform: translateX(15%);
-// 		transform: translateY(15%);
-// 		transform: rotateX(15deg);
-// 	}
-// }
-
-// @keyframes ghostEyeBlink {
-// 	0% {
-// 		transform: scaleY(1);
-// 	}
-// 	18% {
-// 		transform: scaleY(1);
-// 	}
-// 	38% {
-// 		transform: scaleY(1);
-// 	}
-// 	40% {
-// 		transform: scaleY(0);
-// 	}
-// 	45% {
-// 		transform: scaleY(1);
-// 	}
-// 	80% {
-// 		transform: scaleY(1);
-// 	}
-// }
-
-// .intro__ghost #ghost {
-// 	animation: 2s ease-in-out infinite alternate running ghostMove;
-// }
-
-// .intro__ghost #left_eye,
-// .intro__ghost #right_eye {
-// 	transform-origin: center;
-// 	animation: ghostEyeBlink 3s infinite;
-// }
+@keyframes scrAni {
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(30px);
+	}
+}
