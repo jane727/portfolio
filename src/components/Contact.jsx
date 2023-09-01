@@ -21,7 +21,7 @@ const Contact = () => (
 					<li>
 						<p className='info__title'>github</p>
 						<p className='info__text'>
-							<a href='/' target='_blank'>
+							<a href='https://github.com/jane727' target='blank'>
 								https://github.com/jane727
 							</a>
 						</p>

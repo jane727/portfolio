@@ -3,14 +3,14 @@ import projects02 from '../assets/imgs/projects/gnstartup.jpg';
 import projects03 from '../assets/imgs/projects/gnam6.jpg';
 import projects04 from '../assets/imgs/projects/gcaf.jpg';
 import projects05 from '../assets/imgs/projects/gaecheon2022.jpg';
-import projects06 from '../assets/imgs/projects/yonam_univ.jpg';
+// import projects06 from '../assets/imgs/projects/yonam_univ.jpg';
 import projects07 from '../assets/imgs/projects/klc.jpg';
 import projects08 from '../assets/imgs/projects/mirae.jpg';
 import projects09 from '../assets/imgs/projects/svcarwash.jpg';
 import projects10 from '../assets/imgs/projects/kicet.jpg';
 import projects11 from '../assets/imgs/projects/jellygame.jpg';
 import projects12 from '../assets/imgs/projects/task.jpg';
-
+import projects13 from '../assets/imgs/projects/reactTodo.jpg';
 export const headerNav = [
 	{
 		title: 'intro',
@@ -141,13 +141,13 @@ export const projectsText = [
 		view: 'http://www.gaecheonart.com/',
 		tag: ['HTML', 'CSS', 'JS', 'GnuBoard'],
 	},
-	{
-		title: '연암공과대학교',
-		desc: 'HTML, CSS, Javascript를 사용하여 반응형 웹사이트를 구축하였습니다.',
-		img: projects06,
-		view: 'https://www.yc.ac.kr/',
-		tag: ['HTML', 'CSS', 'JS'],
-	},
+	// {
+	// 	title: '연암공과대학교',
+	// 	desc: 'HTML, CSS, Javascript를 사용하여 반응형 웹사이트를 구축하였습니다.',
+	// 	img: projects06,
+	// 	view: 'https://www.yc.ac.kr/',
+	// 	tag: ['HTML', 'CSS', 'JS'],
+	// },
 	{
 		title: '한국승강기대학교',
 		desc: 'HTML, CSS, Javascript를 사용하여 반응형 웹사이트를 구축하였습니다.',
@@ -170,11 +170,11 @@ export const projectsText = [
 		tag: ['HTML', 'CSS', 'JS', 'PHP'],
 	},
 	{
-		title: '한국세라믹기술원',
-		desc: 'Unity, Blender, AfterEffect를 사용하여 키오스크 안내 프로그램을 제작하였습니다.',
-		img: projects10,
-		view: 'https://dour-concrete-a78.notion.site/8defa0ff67c64235932a5eb3a638fd16',
-		tag: ['Unity', 'Blender', 'AE'],
+		title: 'React To do App',
+		desc: '개인작업물로 React를 사용하여 To-do 어플리케이션을 제작하였습니다. 다크모드를 지원합니다.',
+		img: projects13,
+		view: 'https://jane-todoapp-react.netlify.app/',
+		tag: ['React'],
 	},
 	{
 		title: '젤리를 찾아라!',
@@ -189,5 +189,12 @@ export const projectsText = [
 		img: projects12,
 		view: 'https://jane727.github.io/task/',
 		tag: ['HTML', 'CSS', 'JS'],
+	},
+	{
+		title: '한국세라믹기술원',
+		desc: 'Unity, Blender, AfterEffect를 사용하여 키오스크 안내 프로그램을 제작하였습니다.',
+		img: projects10,
+		view: 'https://janedev.notion.site/janedev/8defa0ff67c64235932a5eb3a638fd16',
+		tag: ['Unity', 'Blender', 'AE'],
 	},
 ];
